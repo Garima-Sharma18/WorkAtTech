@@ -2,6 +2,6 @@
 using namespace std;
 
 int main() {
-	cout<<"My firts code on workar.tech"
+	cout<<"My first code on workat.tech";
 	return 0;
 }
