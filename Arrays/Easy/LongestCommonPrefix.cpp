@@ -1,3 +1,5 @@
+//Find the longest common prefix by using the substring function of string library.
+
 string longestCommonPrefix(vector<string> &str) {
 	if (str.size()==0)
 		return "";
@@ -8,5 +10,4 @@ string longestCommonPrefix(vector<string> &str) {
 			ans = ans.substr(0,ans.length()-1);
 	}
 	return ans;
-	
 }
