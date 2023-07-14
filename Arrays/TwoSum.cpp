@@ -6,14 +6,14 @@ pair<int,int> twoSum(vector<int> &nums, int target)
 	pair <int,int> answer;
 	for (int i = 0; i < nums.size(); i++) 
 	{
-        int complement = target - nums[i];
-
-        if (numMap.find(complement) != numMap.end())
+		int complement = target - nums[i];
+	
+	        if (numMap.find(complement) != numMap.end())
 		{
-            answer.first = numMap[complement];
-            answer.second = i;
-            break;
-        }
+	            answer.first = numMap[complement];
+	            answer.second = i;
+	            break;
+	        }
 		numMap[nums[i]] = i;
 	}
 	return answer;
